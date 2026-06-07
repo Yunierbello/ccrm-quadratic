@@ -7,7 +7,7 @@ Companion code and figures for the paper
 > *Q-quadratic convergence of the centralized circumcentered-reflection
 > method under a relative interior condition.*
 
-The experiments are implemented in **Julia**; a **Python** port reproduces the
+The experiments are implemented in **Julia** port reproduces the
 same numbers and produces the figures. All scripts regenerate every numerical
 claim and figure in the paper.
 
@@ -31,7 +31,6 @@ alternating projections (MAP) and Douglas–Rachford (DR) take many.
 ├── julia/                  # primary implementation (Julia, stdlib only)
 │   ├── verify_numerics.jl  # high-precision checks of the lemmas and examples
 │   └── run_experiments.jl  # cCRM vs MAP vs DR on both test problems
-├── python/                 # Python port (NumPy/SciPy/Matplotlib)
 │   ├── verify_numerics.py
 │   ├── experiments_ccrm.py # projections, circumcenter, cCRM/MAP/DR operators
 │   └── run_experiments.py  # runs the experiments and writes the figures
@@ -56,20 +55,9 @@ julia run_experiments.jl     # cCRM vs MAP vs DR; prints distance histories
 Requires Julia ≥ 1.6. Uses only the standard library (`LinearAlgebra`,
 `Printf`); see `julia/Project.toml`.
 
-### Python (port, also produces the figures)
-
-```bash
-cd python
-pip install -r requirements.txt
-python verify_numerics.py    # high-precision checks (needs mpmath)
-python run_experiments.py    # writes convergence_*.png into the working dir
-```
-
-Requires Python ≥ 3.9 with `numpy`, `scipy`, `matplotlib`, `mpmath`.
-
 ## Reproducibility
 
-The spectral experiment uses a fixed random seed (`20260606` in Python) so the
+The spectral experiment uses a fixed random seed  so the
 reported numbers reproduce exactly. The Julia port uses Julia's default RNG;
 set a seed with `Random.seed!` if bit-identical output across languages is
 needed. All distances are `dist(z^k, X ∩ Y)`, computed by projecting each
