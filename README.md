@@ -5,7 +5,7 @@ Companion code and figures for the paper
 
 > Y. Bello-Cruz,
 > *Q-quadratic convergence of the centralized circumcentered-reflection
-> method under a relative interior condition.*
+> method under a relative interior condition. arXiv:2604.11450, 1--15 (2026).*
 
 The experiments are implemented in **Julia** port reproduces the
 same numbers and produces the figures. All scripts regenerate every numerical
