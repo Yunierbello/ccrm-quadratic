@@ -31,9 +31,6 @@ alternating projections (MAP) and Douglas–Rachford (DR) take many.
 ├── julia/                  # primary implementation (Julia, stdlib only)
 │   ├── verify_numerics.jl  # high-precision checks of the lemmas and examples
 │   └── run_experiments.jl  # cCRM vs MAP vs DR on both test problems
-│   ├── verify_numerics.py
-│   ├── experiments_ccrm.py # projections, circumcenter, cCRM/MAP/DR operators
-│   └── run_experiments.py  # runs the experiments and writes the figures
 ├── figures/                # figures used in the paper
 │   ├── convergence_ellipsoid.png
 │   ├── convergence_spectral.png
