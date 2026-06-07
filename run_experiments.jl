@@ -1,6 +1,6 @@
 # run_experiments.jl
 #
-# Julia companion to run_experiments.py: runs cCRM, MAP, and DR on
+# Julia runs cCRM, MAP, and DR on
 #   (A) equality-constrained ellipsoidal feasibility (reduced to R^2), and
 #   (B) fixed-trace spectral feasibility in S^n,
 # and prints the distance histories and quadratic ratios.
