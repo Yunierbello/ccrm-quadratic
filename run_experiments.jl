@@ -6,7 +6,7 @@
 # and prints the distance histories and quadratic ratios.
 #
 # Uses only the standard library (LinearAlgebra, Printf).  No plotting here;
-# the Python script produces the figure.  Run:  julia run_experiments.jl
+# Run:  julia run_experiments.jl
 
 using LinearAlgebra
 using Printf
